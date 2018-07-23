@@ -19,7 +19,10 @@ inherit webos_pkgconfig
 inherit webos_distro_variant_dep
 inherit webos_public_repo
 
-SRC_URI = "${WEBOSOSE_GIT_REPO_COMPLETE}"
+SRC_URI = "${WEBOSOSE_GIT_REPO_COMPLETE} \
+           file://0001-ffmpeg_4.0.1.patch \
+          "
+
 S = "${WORKDIR}/git"
 WEBOS_SYSTEM_BUS_FILES_LOCATION = "${S}/files/sysbus"
 

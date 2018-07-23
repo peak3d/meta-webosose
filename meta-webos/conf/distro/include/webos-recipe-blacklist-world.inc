@@ -313,10 +313,10 @@ PNBLACKLIST[python-gst] ?= "rdepends on blacklisted python-pygtk"
 PNBLACKLIST[gnome-icon-theme] ?= "rdepends on blacklisted librsvg-gtk"
 #PNBLACKLIST[] ?= "rdepends on blacklisted "
 
-PNBLACKLIST[enca] ?= "ERROR: QA Issue: enca: configure was passed unrecognised options: --with-libiconv-prefix [unknown-configure-option]"
+#PNBLACKLIST[enca] ?= "ERROR: QA Issue: enca: configure was passed unrecognised options: --with-libiconv-prefix [unknown-configure-option]"
 PNBLACKLIST[corosync] ?= "ERROR: QA Issue: corosync: configure was passed unrecognised options: --disable-nss --enable-nss [unknown-configure-option]"
 PNBLACKLIST[dlm] ?= "ERROR: Depends on blacklisted corosync"
-PNBLACKLIST[libass] ?= "ERROR: Depends on blacklisted enca"
+#PNBLACKLIST[libass] ?= "ERROR: Depends on blacklisted enca"
 
 PNBLACKLIST[weston] ?= "Not compatible with old wayland used in webos-pro http://caprica.lgsvl.com:8080/Errors/Details/881250"
 PNBLACKLIST[weston-init] ?= "depends on blacklisted weston"

@@ -13,3 +13,5 @@ IMAGE_FEATURES += "${@'' if '${WEBOS_DISTRO_PRERELEASE}' == '' else 'debug-tweak
 inherit webos_image
 
 IMAGE_ROOTFS_EXTRA_SPACE = "524288"
+
+IMAGE_INSTALL_append = " kodi"
